@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E4A51439-47EE-4DC4-A65F-955986F08004}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RabbitMQ.Client", "RabbitMQ.Client", "{FA0655CD-E26C-4841-86AC-36462069DA73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Client.API", "RabbitMQ.Client\RabbitMQ.Client.API\RabbitMQ.Client.API.csproj", "{FB711B12-3A6C-48EF-9DCB-15CCE01EC498}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Client.Worker", "RabbitMQ.Client\RabbitMQ.Client.Worker\RabbitMQ.Client.Worker.csproj", "{171240F6-4A80-423D-AC7E-398CDB0B9639}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB711B12-3A6C-48EF-9DCB-15CCE01EC498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB711B12-3A6C-48EF-9DCB-15CCE01EC498}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB711B12-3A6C-48EF-9DCB-15CCE01EC498}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB711B12-3A6C-48EF-9DCB-15CCE01EC498}.Release|Any CPU.Build.0 = Release|Any CPU
+		{171240F6-4A80-423D-AC7E-398CDB0B9639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{171240F6-4A80-423D-AC7E-398CDB0B9639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{171240F6-4A80-423D-AC7E-398CDB0B9639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{171240F6-4A80-423D-AC7E-398CDB0B9639}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FA0655CD-E26C-4841-86AC-36462069DA73} = {E4A51439-47EE-4DC4-A65F-955986F08004}
+		{FB711B12-3A6C-48EF-9DCB-15CCE01EC498} = {FA0655CD-E26C-4841-86AC-36462069DA73}
+		{171240F6-4A80-423D-AC7E-398CDB0B9639} = {FA0655CD-E26C-4841-86AC-36462069DA73}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {265DCBAB-4094-44DA-87A2-6CDFA4A8D3C2}
+	EndGlobalSection
+EndGlobal
