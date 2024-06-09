@@ -1,0 +1,90 @@
+{
+  "users": [
+    {
+      "name": "guest",
+      "password_hash": "BMfxN8drrYcIqXZMr+pWTpDT0nMcOagMduLX0bjr4jwud/pN",
+      "hashing_algorithm": "rabbit_password_hashing_sha256",
+      "tags": [
+        "administrator"
+      ],
+      "limits": {}
+    }
+  ],
+  "vhosts": [
+    {
+      "name": "/"
+    }
+  ],
+  "permissions": [
+    {
+      "user": "guest",
+      "vhost": "/",
+      "configure": ".*",
+      "write": ".*",
+      "read": ".*"
+    }
+  ],
+  "exchanges": [
+    {
+      "name": "exchange-teste",
+      "vhost": "/",
+      "type": "topic",
+      "durable": true,
+      "auto_delete": false,
+      "internal": false,
+      "arguments": {}
+    }
+  ],
+  "queues": [
+    {
+      "name": "fila-rabbitmqclient",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    },
+    {
+      "name": "fila-easynetq",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    },
+    {
+      "name": "fila-masstransit",
+      "vhost": "/",
+      "durable": true,
+      "auto_delete": false,
+      "arguments": {}
+    }
+  ],
+  "bindings": [
+    {
+      "source_type": "exchange",
+      "source": "exchange-teste",
+      "vhost": "/",
+      "destination": "fila-rabbitmqclient",
+      "destination_type": "queue",
+      "routing_key": "rabbitmqclient",
+      "arguments": {}
+    },
+    {
+      "source_type": "exchange",
+      "source": "exchange-teste",
+      "vhost": "/",
+      "destination": "fila-easynetq",
+      "destination_type": "queue",
+      "routing_key": "easynetq",
+      "arguments": {}
+    },
+    {
+      "source_type": "exchange",
+      "source": "exchange-teste",
+      "vhost": "/",
+      "destination": "fila-masstransit",
+      "destination_type": "queue",
+      "routing_key": "masstransit",
+      "arguments": {}
+    }
+  ]
+}

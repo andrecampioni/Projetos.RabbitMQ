@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RabbitMQ.Client" Version="6.8.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Commons\Projetos.RabbitMQ.Commons\Projetos.RabbitMQ.Commons.csproj" />
+    <ProjectReference Include="..\..\Workers\Projetos.RabbitMQ.Client.Worker\Projetos.RabbitMQ.Client.Workers.csproj" />
+    <ProjectReference Include="..\..\Workers\Projetos.RabbitMQ.EasyNetQ.Workers\Projetos.RabbitMQ.EasyNetQ.Workers.csproj" />
+    <ProjectReference Include="..\..\Workers\Projetos.RabbitMQ.MassTransit.Worker\Projetos.RabbitMQ.MassTransit.Workers.csproj" />
+  </ItemGroup>
+
+</Project>

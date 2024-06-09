@@ -1,0 +1,15 @@
+version: '3'
+services:
+  rabbitMQ:
+    image: rabbitmq:3-management
+    ports:
+      - 15672:15672
+      - 5672:5672 
+    volumes:
+      - type: bind
+        source: ./rabbitmq.config
+        target: /etc/rabbitmq/rabbitmq.config
+      - type: bind
+        source: ./rabbitmq-defs.json
+        target: /etc/rabbitmq/rabbitmq-defs.json
+ 
